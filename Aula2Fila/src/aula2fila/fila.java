@@ -43,14 +43,19 @@ public class fila{
 	}
 	
 	public void insereInicio(int info){
-            
-            tipoNo novo, aux;
-            aux = cabeca;
-            novo = new tipoNo();
-            novo.setInfo(info);
-            novo.setProx(aux);
-            cabeca = novo;
-            
+            if(cabeca == null){
+			cabeca = new tipoNo();
+			cabeca.setInfo(info);
+			cabeca.setProx(null);
+		}
+            else{
+                tipoNo novo;
+                novo = new tipoNo ();
+                novo.setInfo(info);
+                novo.setProx(cabeca);
+                cabeca = novo;
+            }
+            System.out.println("Elemento "+info+"inserido");
 	}
 	public void removeFinal(){
             
