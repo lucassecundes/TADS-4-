@@ -1,5 +1,7 @@
 package aula2fila;
 
+import jdk.internal.util.xml.impl.Input;
+
 public class fila{
 	
 	public tipoNo cabeca;
@@ -48,6 +50,7 @@ public class fila{
 			cabeca.setInfo(info);
 			cabeca.setProx(null);
 		}
+            
             else{
                 tipoNo novo;
                 novo = new tipoNo ();
@@ -58,6 +61,9 @@ public class fila{
             System.out.println("Elemento "+info+"inserido");
 	}
 	public void removeFinal(){
+            
+            
+              
             
 	}
 	
